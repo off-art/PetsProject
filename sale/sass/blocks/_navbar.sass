@@ -1,0 +1,117 @@
+.navbar
+  &-logo
+    margin-left: 26px
+  &-block
+    padding-top: 27px
+    padding-bottom: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-contacts
+    min-width: 321px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-right: -100px
+    &__phone
+      font-size: 16px
+      color: $main-color
+      font-family: "Open Sans Regular", sans-serif
+      line-height: 21px
+      text-decoration: none
+    &__button
+      color: #00b5ee
+      font-family: "Open Sans Regular", sans-serif
+      font-size: 11px
+      border: 1px solid #00b5ee
+      background-color: #ffffff
+      padding: 13px 22px 14px 24px 
+      border-radius: 50px
+      outline: none
+      cursor: pointer
+  
+  
+  &-buttons
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      outline: none
+      cursor: pointer
+      position: relative
+      margin-top: 5px
+      margin-left: 32px
+      &_s
+        &:last-child
+          &::before
+            content: '4'
+            position: absolute
+            top: 0
+            right: 0
+            height: 18px
+            width: 18px
+            font-size: 11px
+            text-align: center
+            line-height: 18px
+            background-color: #ffc740
+            color: #fff
+            border-radius: 50%
+    &__text
+      color: $main-color
+      text-align: center
+      font-size: 12px
+      font-family: "Open Sans Semibold", sans-serif
+
+@media (max-width: 1200px)
+  .container
+    max-width: 90%
+@media (max-width: 992px)
+  .navbar
+    &-block
+      padding-bottom: 19px
+  .container
+    max-width: 596px
+  .navbar
+    &-logo img
+      max-width: 93px
+      max-height: 38px
+    &-contacts
+      display: none
+    &-buttons
+      align-items: center
+      &__item
+        margin-top: 5px
+        margin-left: 12px     
+      &__text
+        display: none
+@media (max-width: 768px)  
+  .navbar
+    &-block
+      padding-bottom: 11px     
+@media (max-width: 650px)
+  .container
+    max-width: 90%
+    margin: auto
+  .navbar
+    &-logo
+      margin-left: 0
+    &-block
+      padding-top: 15px
+      padding-bottom: 7px
+    &-button
+      max-width: 108px
+@media(max-width: 567px)
+  .navbar
+    &-logo
+      margin-left: 0
+    &-block
+      padding-top: 20px
+      padding-bottom: 17px
+
+@media (max-width: 320px)
+  .container
+    max-width: 290px
+    margin: auto

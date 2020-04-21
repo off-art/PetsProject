@@ -1,0 +1,41 @@
+.header
+  position: fixed
+  width: 100%
+  top: 0
+  background-color: #749c8d
+  z-index: 100000
+  &-section
+    min-height: 65px 
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-logo
+    display: flex
+    align-items: center
+    &__img
+      margin-right: 15px
+    &__title
+      font-family: 'Tahoma Regular'
+      font-weight: 400
+      font-size: 26px
+      text-transform: uppercase
+      color: #ffffff
+      letter-spacing: -1.17px
+  &-social
+    min-width: 147px
+    display: flex
+    justify-content: space-around
+    &__link
+      width: 41px
+      height: 41px
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 2px solid #ffffff
+      border-radius: 100%
+@media(max-width: 567px)
+  .header-section
+    margin-top: 15px
+    margin-bottom: 15px
+    flex-direction: column
+    justify-content: space-around

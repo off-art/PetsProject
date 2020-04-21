@@ -1,0 +1,482 @@
+.modal
+  &-product
+    &-add
+      transition: top 1s ease-out 0.5s
+      position: fixed
+      content: ''
+      background-color: rgba(0,0,0,.5)
+      width: 100vw
+      height: 100vh
+      top: 0
+      left: 0
+      z-index: 999999999
+      display: none
+      &__count
+        position: absolute
+        font-family: 'Open Sans Semibold', sans-serif
+        right: 0
+        bottom: 15px
+        font-size: 16px
+        &_blue
+          color:#00b5ee
+      &-dialog
+        
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        max-width: 977px
+        width: 100%
+        background-color: #fff
+        transform: translate(-50%,-50%)
+      &__close
+        position: absolute
+        top: 15px
+        right: 20px
+        background-color: transparent
+        border: none
+        font-size: 24px
+        color: #fff
+        cursor: pointer
+        &_black
+          position: absolute
+          top: 15px
+          right: 20px
+          background-color: transparent
+          border: none
+          font-size: 24px
+          color: #000
+          cursor: pointer
+
+      &__title
+        height: 58px
+        width: 100%
+        color: #fff
+        background-color: #00b5ee
+        font-size: 16px
+        font-weight: 700
+        line-height: 58px
+        padding-left: 30px
+        margin-bottom: 33px
+      &__description
+        margin-left: 27px
+        display: flex
+        position: relative
+        width: 100%
+        justify-content: space-between
+        margin-right: 28px
+      &__price
+        font-family: 'Open Sans Semibold', sans-serif
+        text-align: right
+        margin-top: 25px
+        padding-right: 28px
+        height: 65px
+        line-height: 65px
+        font-size: 16px
+        background-color: #e0f7fa
+        margin-bottom: 32px
+      &_blue
+        &-big
+          color: #00b5ee
+          font-size: 24px
+      &__next
+        &-buy
+          background-color: transparent
+          width: 237px
+          height: 49px
+          font-size: 16px
+          font-weight: 600
+          color: #2c2c2c
+          border: 1px solid #393939
+          border-radius: 30px
+          &_log
+            width: 200px
+
+      &__get
+        &-buy
+          width: 198px
+          height: 49px
+          font-size: 16px
+          font-weight: 600
+          background: #00b5ee
+          color: #fff
+          border: none
+          border-radius: 30px
+          &_log
+            margin-bottom: 11px
+          
+      &__buttons
+        display: flex
+        justify-content: space-between
+        margin-bottom: 36px
+        margin-left: 29px
+        margin-right: 29px
+        text-align: center
+        line-height: 49px
+      &__block
+        &-product
+          display: flex
+          margin-bottom: 20px
+      &__image
+        margin-left: 31px
+        max-width: 165px
+        max-height: 190px
+        margin-bottom: 30px
+      &__column
+        font-size: 16px
+        &__del
+          height: 25px
+          position: relative
+      &__button
+        &-delete
+          width: 25px
+          height: 25px
+          border: none
+          background-color: transparent
+          &::after
+            position: absolute
+            content: '\2613'
+            top: 0
+            right: 0
+            width: 25px
+            height: 25px
+            line-height: 24px
+            color: #f87190
+            text-align: center
+            background-color: transparent
+            border: 1px solid #f87190
+            border-radius: 50%
+      &__title
+        &-table
+          margin-bottom: 13px
+          font-weight: 600
+      &__text
+        &-table
+          font-weight: 300
+      
+      &-faq
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        width: 100%
+        background-color: #fff
+        max-width: 598px
+        transform: translate(-50%,-50%)
+        padding-bottom: 20px
+      &-inputs
+        display: flex
+        flex-direction: column
+        width: 534px
+        margin: auto
+        
+      &__input
+        padding: 20px
+        border: 1px solid #95dbf1
+        font-size: 14px
+        margin-bottom: 9px
+        
+        
+      &__textarea
+        margin-bottom: 20px
+        padding: 20px
+        font-size: 14px
+        border: 1px solid #95dbf1
+        resize: none
+      &__button
+        width: 198px
+        height: 49px
+        font-size: 16px
+        font-weight: 600
+        background: #00b5ee
+        color: #fff
+        border: none
+        border-radius: 30px
+        margin: auto
+      &-click
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        max-width: 598px
+        width: 100%
+        background-color: #fff
+        transform: translate(-50%,-50%)
+        padding-bottom: 35px
+      &-buttons
+        display: flex
+        flex-direction: column
+        align-items: center
+      &-login
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        max-width: 352px
+        width: 100%
+        background-color: #fff
+        transform: translate(-50%,-50%)
+        padding-bottom: 35px
+      &-thanks
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        max-width: 500px
+        width: 100%
+        background-color: #fff
+        transform: translate(-50%,-50%)
+        padding-bottom: 35px
+        border: 5px dotted #00b5ee
+        &_text
+          font-family: 'Open Sans SemiBold', sans-serif
+          font-size: 50px
+          display: block
+          text-align: center
+          margin-bottom: 30px
+          margin-top: 30px
+          color: #393939
+        &_img
+          width: 300px
+          height: 300px
+        &_active
+          display: block
+      &__subtitle
+        padding-top: 39px
+        margin-bottom: 25px
+        font-size: 16px
+        color: #393939
+        text-align: center
+      &-registration
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        max-width: 736px
+        width: 100%
+        background-color: #fff
+        transform: translate(-50%,-50%)
+        padding-bottom: 35px
+      &-box
+        display: flex 
+      &_widht
+        height: 51px
+        margin-bottom: 11px
+      &-inputs
+        &_widht
+          width: 331px
+          margin: 0
+          margin-left: 30px
+          margin-right: 57px
+          margin-bottom: 5px
+          
+      &-social
+        // margin-right: 106px
+        margin-bottom: 25px
+        &__item
+          display: block
+          border: none
+          margin-bottom: 5px
+          width: 212px
+          height: 48px
+          color: #ffffff
+          font-size: 14px
+          font-family: 'Open Sans SemiBold', sans-serif
+          &_inst
+            background-color: #b1388f
+            position: relative
+            &::after
+              position: absolute
+              content: ''
+              width: 22px
+              height: 22px
+              left: 10px
+              top: 25%
+              background: url('../img/modal/instagram.png') no-repeat center center
+              background-size: 19px 19px
+            &::before
+              position: absolute
+              content: ''
+              left: 42px
+              top: 3px
+              width: 1px
+              height: 42px
+              background: #fff 
+          &_fb
+            background-color: #3c5a9b
+            position: relative
+            &::after
+              position: absolute
+              content: ''
+              width: 22px
+              height: 22px
+              left: 10px
+              top: 25%
+              background: url('../img/modal/facebook.png') no-repeat center center
+              background-size: 9px 19px
+            &::before
+              position: absolute
+              content: ''
+              left: 42px
+              top: 3px
+              width: 1px
+              height: 42px
+              background: #fff
+              
+          &_vk
+            background-color: #4f75a3
+            position: relative
+            &::after
+              position: absolute
+              content: ''
+              width: 22px
+              height: 22px
+              left: 10px
+              top: 25%
+              background: url('../img/modal/vk.png') no-repeat center center
+              background-size: 22px 13px
+            &::before
+              position: absolute
+              content: ''
+              left: 42px
+              width: 1px
+              top: 3px
+              height: 42px
+              background: #fff
+
+              
+        &__title
+          font-size: 16px
+          margin-bottom: 18px
+      &-authorization
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        max-width: 736px
+        width: 100%
+        background-color: #fff
+        transform: translate(-50%,-50%)
+        padding-bottom: 35px
+      &-saveme
+        margin-top: 12px
+        display: flex
+        justify-content: space-between
+        &__link
+          font-size: 14px
+          color: #00b5ee
+          font-weight: 400
+      &-label
+        // margin-left: -75px
+        font-size: 14px
+        position: relative
+        display: flex
+        align-items: center
+        &::before
+          content: ' '
+          color: #95dbf1
+          display: inline-block
+          margin-right: 15px
+          position: relative
+          text-align: center
+          text-indent: 0
+          width: 20px
+          height: 20px
+          background: 0 0
+          border: 1px solid #95dbf1
+          vertical-align: middle
+          border-radius: 50%
+      &__checkbox
+        display: none
+
+  
+
+.modal-product-add__checkbox:checked+ label:before
+  content: '\2022'
+  font-size: 20px
+  color: #95dbf1
+
+
+@media( max-width: 992px)
+  .modal
+    &-product
+      &-add
+        &-box
+          flex-direction: column
+          align-items: center
+        &-dialog
+          width: 290px
+          margin: auto
+        &-authorization
+          width: 90%
+          margin: auto
+        &-registration
+          width: 90%
+          margin: auto
+        &-inputs
+          width: 90%
+          &_widht
+            width: 251px
+            margin: auto
+        &-saveme
+          flex-direction: column
+          &__link
+            margin-left: 38px
+            margin-bottom: 32px
+        &-label
+          margin-bottom: 16px
+        &-social
+          margin: auto
+          margin-bottom: 32px
+        &-faq
+          width: 90%
+          margin: auto
+        &-login
+          width: 90%
+          margin: auto
+        &__image
+          margin-left: 0
+          margin-top: 18px
+        &__block
+          &-product
+            margin-bottom: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__description
+          flex-direction: column
+          margin-right: 0
+        &__button
+          &-delete
+            &::after
+              top: -490px
+              right: 28px
+        &__count
+          right: 30px
+          bottom: 30px
+        &__column
+          margin-bottom: 14px
+        &__buttons
+          align-items: center
+          flex-direction: column-reverse
+        &__get
+          &-buy
+            margin-bottom: 19px
+        &__title
+          margin-bottom: 5px
+        &__price
+          margin-top: 0
+        
+          
+
+
+  
+        
+

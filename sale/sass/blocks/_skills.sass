@@ -1,0 +1,41 @@
+.skills
+  border-top: 1px solid $line-color
+  border-bottom: 1px solid $line-color
+  margin-bottom: 54px
+  &-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item
+    padding-bottom: 34px
+    padding-top: 30px
+    display: flex
+    align-items: center
+    
+    &__img
+     margin-right: 9px
+    &__text
+      max-width: 165px
+      color: $main-color
+      font-size: 14px
+      line-height: 18px
+      font-family: 'Open Sans Regular', sans-serif
+
+@media (max-width: 992px)
+  .skills
+    padding-bottom: 21px
+    margin-bottom: 19px
+    &-item
+      padding-bottom: 3px
+      padding-top: 19px
+      &__img
+        margin-right: 22px
+      &__text
+        max-width: 230px
+    // &-list
+    //   justify-content: center
+@media (max-width: 639px)
+  .skills
+    &-list
+      justify-content: center
+

@@ -1,0 +1,111 @@
+.mobile-menu > .mobile-menu__item
+  &:hover
+    background-color: #e0f7fa
+    cursor: pointer
+.mobile-menu
+  top: 100%
+  position: absolute
+  width: 100%
+  list-style: none
+  display: none
+  &__item-2_active, &__item-3_active
+    background-color: #e0f7fa
+  &_active 
+    display: flex
+  &__item
+    font-weight: 400
+    font-size: 15px
+    line-height: 51px
+    border-bottom: 1px solid #e0f7fa
+    position: relative
+    background-color: #fff
+    z-index: 999
+    &:before
+      position: absolute
+      content: ''
+      top: 20px
+      right: 5%
+      width: 51px
+      height: 51px
+      border: 1px solid #e0f7fa
+      border-top: none
+      border-left: none
+      backround: red
+      width: 7px
+      height: 7px
+      transform: rotate(45deg) 
+    &_active
+      flex-direction: column
+      height: 100%
+      background-color: #e0f7fa
+    a
+      display: flex
+      padding-left: 7%
+      width: 100%
+    img
+      margin-right: 14px
+      display: none
+  &-level-2
+    display: none
+    background: #fff !important
+    &_active
+      display: flex
+      flex-direction: column
+      background: #fff
+      width: 100%
+    &__item
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        top: 20px
+        right: 5%
+        width: 51px
+        height: 51px
+        border: 1px solid #95dbf1
+        border-top: none
+        border-left: none
+        backround: red
+        width: 7px
+        height: 7px
+        transform: rotate(-45deg) 
+    &__item:hover
+      background-color: #e0f7fa
+      cursor: pointer
+    &__item:hover .mobile-menu-level-3__item
+      background-color: #fff
+      cursor: pointer
+  &-level-3
+    display: none
+    flex-direction: column
+    &__item
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        right: 0
+        width: 51px
+        height: 51px
+        background: url("../img/navbar/arrow_right.png") no-repeat center center
+    &__item
+      &:hover
+        background-color: #e0f7fa !important
+        cursor: pointer
+    &__item:hover .mobile-menu-level-4__item
+      background-color: #fff
+      cursor: pointer
+    &_active
+      display: flex
+  &-level-4
+    display: none
+    flex-direction: column
+    &__item
+      &:hover
+        background-color: #e0f7fa !important
+        cursor: pointer
+    &_active
+      display: flex
+@media (max-width: 1200px)
+  .mobile
+    &-menu
+      display: none

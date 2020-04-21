@@ -1,0 +1,136 @@
+.new
+  margin-bottom: 30px
+  &-title
+    &__text
+      display: block
+      font-family: "Open Sans Semibold", sans-serif
+      display: block
+      font-size: 26px
+      color: $main-color
+      text-align: center
+      margin-bottom: 43px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 66px
+        height: 1px
+        background-color: $br-color
+        bottom: -15px
+        left: 50%
+        transform: translateX(-50%)
+      &_left
+        font-family: "Open Sans Semibold", sans-serif
+        display: block
+        font-size: 26px
+        color: $main-color
+        margin-bottom: 36px
+        position: relative
+        &::after
+          position: absolute
+          content: ''
+          width: 66px
+          height: 1px
+          background-color: $br-color
+          bottom: -17px
+          left: 0
+          
+
+      
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__card
+    margin-bottom: 22px
+.page 
+  &-selection
+    display: flex
+    justify-content: center
+    &__item
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 13px
+      color: #b7b7b7
+      font-family: 'Roboto Regular', sans-serif
+      width: 32px
+      height: 31px
+      border: 1px solid #cecece
+      margin-right: 2px
+      cursor: pointer
+      position: relative
+      
+      &:last-child
+        &::after
+          position: absolute
+          content: ''
+          width: 6px
+          height: 14px
+          background: url('../img/page-selection/arrow-page-right.png')
+      &:first-child
+        &::after
+          position: absolute
+          content: ''
+          width: 6px
+          height: 14px
+          background: url('../img/page-selection/arrow-page-left.png')
+        
+      &_nobord
+        list-style: none
+        width: 32px
+        height: 31px
+        position: relative
+        cursor: pointer
+        margin-right: -10px
+        &::after
+          position: absolute
+          content: '...'
+          color: #b7b7b7
+          top: 7px
+          left: 6px
+          cursor: pointer
+@media (min-width: 992px)
+  .page
+    &-selection
+      &__item
+        &:hover
+          border: 1px solid $bg-color
+          color: $bg-color
+  
+          
+@media (max-width: 768px)
+  .new
+    margin-bottom: 43px
+    &-title
+      &__text
+        &_left
+          margin-top: 24px
+          font-size: 20px
+          margin-bottom: 36px
+        
+// @media (max-width: 650px)
+//   .sale
+//     &-cards
+//       &__item
+//         width: 263px
+//         margin: auto
+//         margin-bottom: 22px
+//         &:last-child
+//           margin-bottom: 17px
+@media (max-width: 567px)
+  .new
+    &-title
+      &__text
+        &_left
+          font-size: 20px
+          line-height: 26px
+          max-width: 239px
+  // .sale
+  //   &-cards
+  //     &__item
+  //       width: 263px
+  //       margin: auto
+  //       margin-bottom: 22px
+  //       &:last-child
+  //         margin-bottom: 17px

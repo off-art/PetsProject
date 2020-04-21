@@ -1,0 +1,176 @@
+.cards
+  &-list
+    display: flex
+    position: relative
+    &_right
+      margin-right: 15px
+      &_bottom
+        display: flex
+        margin-top: 9px
+.first
+  margin-right: 13px
+.card
+  &-1
+    width: 765px
+    height: 316px
+    background: url(../img/cards/baby.jpg) no-repeat center center
+    margin-bottom: 13px
+    
+  &-2
+    width: 375px
+    height: 327px
+    margin-right: 15px
+    background: url(../img/cards/bedding.jpg) no-repeat center center
+  &-3
+    width: 375px
+    height: 327px
+    background: url(../img/cards/cutlery.jpg) no-repeat center center
+  &-4
+    width: 361px
+    height: 655px
+    background: url(../img/cards/nursery.jpg) no-repeat center center
+ 
+.baby
+  position: relative
+  &::before
+    position: absolute
+    content: 'Caramell'
+    font-size: 21px
+    font-family: "Open Sans Semibold", sans-serif
+    bottom: 0
+    left: 0
+    color: #393939
+    background-color: rgba(255,255,255,.8)
+    width: 100%
+    height: 75px
+    line-height: 75px
+    text-align: center
+  // &:hover
+    &::before
+      color: #fff
+      background-color: rgba(0,181,238,.8)
+.bad
+  position: relative
+  &::before
+    position: absolute
+    content: 'Постельное белье'
+    font-size: 21px
+    font-family: "Open Sans Semibold", sans-serif
+    bottom: 0
+    left: 0
+    color: #393939
+    background-color: rgba(255,255,255,.8)
+    width: 100%
+    height: 75px
+    line-height: 75px
+    text-align: center
+  // &:hover
+    &::before
+      color: #fff
+      background-color: rgba(0,181,238,.8)
+.table
+  position: relative
+  &::before
+    position: absolute
+    content: 'Детская посуда'
+    font-size: 21px
+    font-family: "Open Sans Semibold", sans-serif
+    bottom: 0
+    left: 0
+    color: #393939
+    background-color: rgba(255,255,255,.8)
+    width: 100%
+    height: 75px
+    line-height: 75px
+    text-align: center
+  // &:hover
+    &::before
+      color: #fff
+      background-color: rgba(0,181,238,.8)
+.toys
+  position: relative
+  &::before
+    position: absolute
+    content: 'Корзины для игрушек'
+    font-size: 21px
+    font-family: "Open Sans Semibold", sans-serif
+    bottom: 0
+    left: 0
+    color: #393939
+    background-color: rgba(255,255,255,.8)
+    width: 100%
+    height: 75px
+    line-height: 75px
+    text-align: center
+  // &:hover
+    &::before
+      color: #fff
+      background-color: rgba(0,181,238,.8)
+
+@media (max-width: 1200px)
+  .cards
+    &-list
+      justify-content: center
+      &_right
+        margin: 0
+      &__item
+        width: 290px
+        height: 254px 
+  .card
+    &-1
+      background: url(../img/cards/baby.jpg) no-repeat -351px 0
+    &-2
+      margin-right: 13px
+    &-3
+      position: absolute
+      top: 0
+      left: 50.8%
+    &-4
+      background: url(../img/cards/nursery.jpg) no-repeat center center
+      position: relative
+      margin-top: 266px
+
+@media (max-width: 768px)
+  .cards
+    &-list
+      // width: 90%
+      // margin: auto
+      // align-items: center
+      // flex-direction: column
+      &_right
+        margin: 0
+        &_bottom
+          display: flex
+          flex-direction: column
+      &__item
+        width: 290px
+        height: 254px 
+@media (max-width: 567px)
+  .cards
+    &-list
+      align-items: center
+      flex-direction: column
+      &_right
+        margin: 0
+        &_bottom
+          display: flex
+          flex-direction: column
+      &__item
+        margin-right: 0
+        width: 290px
+        height: 254px 
+    .card
+      &-3
+        position: static
+        margin-top: 15px
+        &::before
+          top: 715px
+      &-4
+        margin-top: 15px
+        width: 290px
+        height: 254px
+        margin-right: 0
+        
+        
+
+    

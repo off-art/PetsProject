@@ -1,0 +1,198 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #EDEDED;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.git {
+  /* position: absolute;
+  top: 200px;
+  right: 80px; */
+}
+.git-wrap {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.git__button {
+  color: #fff;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+  display: inline-block;
+  padding: 6px 12px 6px 36px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: .25em;
+  appearance: none;
+  text-decoration: none;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  position: relative;
+}
+.git__button::before {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url('../img/github-logo.png') no-repeat;
+  left: 5%;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.git__button:hover {
+  background-color: #269f42;
+  background-image: linear-gradient(-180deg,#2fcb53,#269f42 90%);
+  background-position: -.5em;
+  border-color: rgba(27,31,35,.5);
+}
+
+.title {
+  margin-bottom: 50px;
+  font-family: Verdana;
+	font-size: 6.5em;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow:
+		0 1px 0 #CCCCCC,
+		0 2px 0 #C9C9C9,
+		0 3px 0 #BBBBBB,
+		0 4px 0 #B9B9B9,
+		0 5px 0 #AAAAAA,
+		0 6px 1px rgba(0,0,0,.1),
+		0 0 5px rgba(0,0,0,.1),
+		0 1px 3px rgba(0,0,0,.3),
+		0 3px 5px rgba(0,0,0,.2),
+		0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+		0 20px 20px rgba(0,0,0,.15);
+}
+
+.main {
+  perspective: 1000px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  transition: 1s;
+  /* transform-style: preserve-3d; */
+}
+
+.item_img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.item_description {
+  display: none;
+  text-decoration: none;
+  color: black;
+}
+
+.item_description{
+  display: block;
+}
+
+.colection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+
+.item_card {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px ;
+  width: 27%;
+  padding: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+}
+.item_card:last-child {
+  margin-left: 20px;
+}
+
+
+.item_title {
+  display: none;
+  text-align: center;
+  display: inline-block;
+  /* border: 1px dotted salmon; */
+  font-family: Verdana;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow:
+		0 1px 0 #CCCCCC,
+		0 2px 0 #C9C9C9,
+		0 3px 0 #BBBBBB,
+		0 4px 0 #B9B9B9,
+		0 5px 0 #AAAAAA,
+		0 6px 1px rgba(0,0,0,.1),
+		0 0 5px rgba(0,0,0,.1),
+		0 1px 3px rgba(0,0,0,.3),
+		0 3px 5px rgba(0,0,0,.2),
+		0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+		0 20px 20px rgba(0,0,0,.15);
+}
+
+
+
+
+
+@media (max-width: 992px) {
+  .item_card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .colection {
+    justify-content: center;
+  }
+  .item_card:last-child {
+      margin: auto;
+  }
+  .item_card {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 567px) {
+  .title {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 40px;
+  }
+  .git{
+    top: 65px;
+    right: 34px;
+  }
+}
+
+

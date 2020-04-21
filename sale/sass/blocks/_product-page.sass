@@ -1,0 +1,360 @@
+.product
+  &-box
+    display: flex
+  &-slider
+    position: relative
+    min-width: 654px
+    margin-right: 55px
+  &-description
+    margin-top: 16px
+    &__title
+      display: block
+      font-size: 21px
+      font-family: "Open Sans Semibold", sans-serif
+      color: $main-color
+      margin-bottom: 21px
+    &__subtitle
+      font-family: "Open Sans Regular", sans-serif
+      color: #898989
+      font-size: 14px
+      margin-right: 26px
+    &__valid
+      color: #31c657
+      font-size: 14px
+      font-family: "Open Sans Regular", sans-serif
+      font-weight: 300
+    &__raiting
+      margin-top: 28px
+      margin-bottom: 21px
+    &__price
+      &_last
+        color: #737373
+        font-family: "Open Sans Semibold", sans-serif
+        font-size: 26px
+        letter-spacing: 0.8px
+        text-decoration: line-through
+        margin-right: 26px
+      &_now
+        color: $main-color
+        font-family: "Open Sans Semibold", sans-serif
+        font-size: 30px
+        letter-spacing: 0.93px
+    &-buttons
+      display: flex
+      align-items: center
+      margin-bottom: 44px
+    &-fav
+      cursor: pointer
+      margin-top: 32px
+      display: flex
+      align-items: center
+      // &_img
+      //   width: 24px
+      //   height: 29px
+      &__text
+        margin-top: -6px
+        margin-left: 12px
+        font-family: "Open Sans Semibold", sans-serif
+        font-size: 14px
+        color: $main-color
+    &__button
+      &_blue
+        margin-right: 30px
+        margin-top: 32px
+        background-color: $bg-color
+        border-radius: 50px
+        color: #fff
+        font-size: 16px
+        font-family: "Open Sans Semibold", sans-serif
+        padding: 15px 59px
+        cursor: pointer
+        outline: none
+        border: none
+    &-social
+      &__link
+        margin-right: 5px
+        text-decoration: none
+        cursor: pointer
+        outline: none
+
+
+  &-form
+    &__title
+      font-size: 16px
+      font-family: "Open Sans Semibold", sans-serif
+      color: $main-color
+      margin-bottom: 13px
+    &__select
+      &_color
+        cursor: pointer
+        outline: none
+        border: 1px solid #95dbf1
+        width: 361px
+        height: 51px
+        padding: 15px
+        margin-bottom: 20px
+        font-family: "Open Sans Regular", sans-serif
+        // opacity: 0.7
+        padding-left: 50px
+        font-size: 14px
+        color: #242021
+        appearance: none
+        
+        
+        
+       
+      
+      &_size
+        cursor: pointer
+        border: 1px solid #95dbf1
+        outline: none
+        border: 1px solid #95dbf1
+        width: 361px
+        height: 51px
+        padding: 15px
+        font-family: "Open Sans Regular", sans-serif
+        // opacity: 0.7
+        text-transform: uppercase
+        font-size: 14px
+        color: #242021
+        margin-bottom: 35px
+        appearance: none
+        position: relative
+   
+
+      
+  &-size
+    position: relative
+    max-width: 361px
+    &::after
+      position: absolute
+      content: ''
+      width: 11px
+      height: 6px
+      background: url('../img/sort/arrow-down.png')
+      top: 44px
+      right: 15px
+
+  &-color
+    position: relative
+    max-width: 361px
+    &::before
+      position: absolute
+      content: ''
+      width: 25px
+      height: 25px
+      border-radius: 50%
+      background-color: $select-round
+      left: 11px
+      top: 32px
+    &::after
+      position: absolute
+      content: ''
+      width: 11px
+      height: 6px
+      background: url('../img/sort/arrow-down.png')
+      top: 44px
+      right: 15px
+      
+.swiper-container
+  cursor: pointer
+  width: 657px
+  height: 810px
+  position: relative
+  // margin-left: auto
+  // margin-right: auto
+
+    
+.swiper-slide 
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+  border: 1px solid $br-color
+.gallery-top 
+  height: 80%
+  width: 100%
+  margin-bottom: 10px
+.gallery-thumbs 
+  width: 600px
+  height: 20%
+  box-sizing: border-box
+  padding: 10px 0
+.gallery-thumbs .swiper-slide 
+  width: 25%
+  height: 75%
+.gallery-thumbs .swiper-slide-thumb-active
+  opacity: 1
+
+
+.swiper
+  &-button
+    &-prev
+      top: 720px
+      left: 0
+      color: #00b5ee
+      
+    &-next
+      top: 720px
+      right: 0
+      color: #00b5ee       
+  
+@media (max-width: 1200px)
+  .product
+    &-box
+      flex-direction: column
+    &-description
+      &-social
+        display: none
+  .swiper-container
+    width: 441px!important
+    height: 438px!important
+    position: relative
+  .swiper-button-prev
+    content: ''
+    background: url('../img/main-page/slider-left.png')
+    width: 48px
+    height: 48px
+    top: 50%
+    left: 15%
+  .swiper-button-next
+    content: ''
+    background: url('../img/main-page/slider-right.png')
+    width: 48px
+    height: 48px
+    top: 50%
+    right: 15%
+
+
+@media (max-width: 992px)
+  .product
+    &-slider
+      position: relative
+      min-width: 0!important
+      margin-right: 0!important
+    &-description
+      &__title
+         font-size: 19px
+         margin-bottom: 16px
+      &__subtitle
+        // font-size: 11px
+      &__valid
+        // font-size: 11px
+      &__raiting
+        margin-top: 16px
+        margin-bottom: 15px
+      &-form
+        display: flex
+        
+      &__price
+        &_last
+          font-size: 27px
+          margin-right: 6px
+        &_now
+          font-size: 30px
+          margin-left: 14px
+      &__button
+        &_blue
+          margin-top: 29px
+          width: 176px
+          height: 49px
+          padding: 0
+          margin-right: 21px
+          font-size: 14px
+      &-fav
+        &__text
+          font-weight: 700
+          font-size: 15px
+          margin-left: 11px
+    &-color
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        width: 24px
+        height: 24px
+        border-radius: 50%
+        background-color: $select-round
+        left: 13px
+        top: 45px
+        z-index: 2
+      &::after
+        position: absolute
+        content: ''
+        width: 11px
+        height: 6px
+        background: url('../img/sort/arrow-down.png')
+        top: 44px
+        right: 29px
+    &-form
+      &__select
+        &_color
+          width: 290px
+          height: 52px
+          margin-right: 15px
+          padding: 0
+          padding-left: 49px
+          font-size: 14px
+          position: relative
+          margin-bottom: 16px
+        &_size
+          width: 290px
+          height: 52px
+          padding: 0
+          padding-left: 21px
+          font-size: 12px
+          margin-bottom: 0px
+      &__title
+        display: block
+        font-size: 16px
+  .swiper-button-prev
+    content: ''
+    background: url('../img/main-page/slider-left.png')
+    width: 48px
+    height: 48px
+    top: 50%
+    left: 0
+  .swiper-button-next
+    
+    content: ''
+    background: url('../img/main-page/slider-right.png')
+    width: 48px
+    height: 48px
+    top: 50%
+    right: 0
+    
+
+@media (max-width: 576px)
+  .product
+    &-description
+      &-form
+        flex-direction: column
+      &-buttons
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+      &-fav
+        margin-top: 20px
+    &-form
+      &__select
+        &_color
+          margin-bottom: 18px
+        &_size
+          margin-bottom: 27px
+    &-color, &-size
+      width: 290px
+      &::after
+        right: 15px
+        top: 55px
+    &-slider
+      min-width: 0!important
+      margin-right: 0!important
+  .swiper-container
+    margin: auto
+    width: 226px!important
+    height: 225px!important
+  .swiper-button-next
+    top: 50%
+  .swiper-button-prev
+    top: 50%
+
+

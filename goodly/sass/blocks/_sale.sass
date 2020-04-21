@@ -1,0 +1,38 @@
+.sale
+  margin-top: 150px
+  &__block
+    min-height: 118px
+    background: url('../image/sale/sale-bg.png') no-repeat center center
+    font-size: 48px
+    text-transform: uppercase
+    text-align: center
+    letter-spacing: 1.92px
+    line-height: 118px
+    font-family: 'Akrobat Regular'
+    position: relative
+    &_red
+      font-family: 'Akrobat Bold'
+      color: #de4814
+      font-size: 63px
+      letter-spacing: 2.5px
+    &::before
+      position: absolute
+      content: ''
+      width: 54px
+      height: 78px
+      background: url('../image/sale/arrow-left.png')
+      bottom: -25px
+      left: 40px
+    &::after
+      position: absolute
+      content: ''
+      width: 54px
+      height: 78px
+      background: url('../image/sale/arrow-right.png')
+      bottom: -25px
+      right: 40px
+@media(max-width: 992px)
+  .sale
+    &__block
+      display: none
+

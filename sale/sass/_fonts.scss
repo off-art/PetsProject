@@ -1,0 +1,75 @@
+/* Стили для шрифтов Roboto */
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto/Roboto-Regular/Roboto-Regular.eot');
+  src: url('../fonts/Roboto/Roboto-Regular/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto/Roboto-Regular/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Regular/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../fonts/Roboto/Roboto-Medium/Roboto-Medium.eot');
+  src: url('../fonts/Roboto/Roboto-Medium/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto/Roboto-Medium/Roboto-Medium.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Medium/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/Roboto/Roboto-Bold/Roboto-Bold.eot');
+  src: url('../fonts/Roboto/Roboto-Bold/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto/Roboto-Bold/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Стили для шрифтов OpenSans */
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../fonts/OpenSans/OpenSans-Light/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans/OpenSans-Light/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSans-Light/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSans-Light/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Стили для шрифтов OpenSans SemiBoid */
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('../fonts/OpenSans-SemiBoid/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBoid/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-SemiBoid/OpenSans-SemiBold.woff') format('woff'),
+  url('../fonts/OpenSans-SemiBoid/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+

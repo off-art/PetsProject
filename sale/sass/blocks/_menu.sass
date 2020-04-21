@@ -1,0 +1,148 @@
+.menu
+  height: 65px
+  background-color: $bg-color
+  margin-bottom: 20px
+  position: relative
+  z-index: 100
+  &::after
+    position: absolute
+    background: #fff
+    width: 100%
+    height: 0
+    content: ''
+    top: 64px
+    visibility: hidden
+    transition: .2s
+    box-shadow: 0 5px 16px rgba(0,0,0,.15)
+    z-index: 99
+  &_active
+    &::after
+      visibility: visible
+      height: 479px
+    
+  // &:hover
+  //   &::after
+  //     visibility: visible
+  //     height: 479px
+        
+
+  &-box
+    display: flex
+    margin-bottom: 17px
+    position: relative
+  &-form
+    &__input
+      width: 400px
+      padding: 12px 20px
+      padding-right: 34px
+      border-radius: 20px
+      border: 0
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+      font-size: 13px
+      font-family: "Open Sans Regular", sans-serif
+      color: rgba(0, 0, 0, 0.44)
+    &__value
+      border: none
+      cursor: pointer
+      padding: 12px 20px
+      position: absolute
+      top: 15%
+      right: 0
+      background: url('../img/menu/loupe.png') no-repeat 10px center
+
+  
+.navbar
+  &__button
+    position: relative
+    background-color: transparent
+    border: 0
+    width: 65px
+    height: 65px
+    margin-right: 18px
+    margin-left: -22px
+    transition: .1s
+    cursor: pointer
+    &::after
+      position: absolute
+      content: ''
+      width: 65px
+      height: 65px
+      background: url('../img/menu/burger-but.png') no-repeat center center
+      
+
+@media (min-width: 992px)
+  .navbar
+    &__button
+      &:hover
+        background-color: rgba(36,32,33,.1)
+        
+
+@media (max-width: 1200px)
+  .nav
+    display: none
+
+  
+
+@media (max-width: 992px)
+  .menu
+    height: 46px
+    &-form
+      &__input
+        padding: 9px 20px
+        padding-right: 34px
+        width: 314px
+        border-radius: 20px
+        border: 0
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+  .navbar
+    &__button
+      width: 46px
+      height: 46px
+      margin-left: -12px
+      &::after 
+        width: 46px
+        height: 46px
+
+@media (max-width: 600px)
+  .menu
+    height: 36px
+    &-form
+      &__input
+        width: 250px
+        font-size: 12px
+      &__value
+        top: -5%
+  .navbar
+    &__button
+      width: 36px
+      height: 36px
+      margin-left: -7px
+      &::after 
+        width: 36px
+        height: 36px
+@media (max-width: 567px)
+  .menu
+    height: 46px
+    &-form
+      &__input
+        width: 233px
+      &__value
+        top: 0
+  .navbar
+    &__button
+      width: 46px
+      height: 46px
+      margin-left: -15px
+      &::after 
+        width: 46px
+        height: 46px
+
+
+    
+

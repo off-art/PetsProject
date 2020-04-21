@@ -1,0 +1,55 @@
+*
+  box-sizing: border-box
+  font-family: sans-serif
+  margin: 0
+  padding: 0
+body
+  background: url(../image/bg.png)
+  
+.container
+  width: 975px
+  margin: 0 auto
+
+.input
+  width: 284px
+  height: 43px
+  font-size: 21px
+  color: rgba(128,130,134, .3)
+  font-family: 'Akrobat Regular'
+  text-align: center
+  line-height: 43
+  outline: none
+  border: none
+
+.btn
+  width: 329px
+  height: 43px
+  background-color: #de0d08
+  color: #ffffff
+  font-size: 21px
+  font-family: 'Akrobat Bold'
+  outline: none
+  cursor: pointer
+  &:hover
+    background-color: lighten(#de0d08, 10%)
+@media(max-width: 1200px)
+  .input
+    margin-bottom: 15px
+@media(max-width: 992px)
+  .container
+    width: 80%
+    margin: 0 auto
+@media(max-width: 567px)
+  .btn
+    width: 80%
+    margin: auto
+    font-size: 11px
+  .input
+    width: 80%
+    margin: auto
+    margin-bottom: 10px
+
+
+  
+
+

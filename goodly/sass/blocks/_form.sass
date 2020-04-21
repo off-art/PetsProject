@@ -1,0 +1,42 @@
+.feedback-form
+  min-height: 95px
+  border: 3px dotted #608f7f
+  background-color: #80c9b0
+  display: flex
+  align-items: center
+  justify-content: space-around
+.feedback
+  margin-bottom: 58px
+  position: relative
+  &::before
+    position: absolute
+    content: ''
+    width: 78px
+    height: 51px
+    background: url('../image/feedback/arrow-r.png')
+    top: 20%
+    left: 1%
+  &::after
+    position: absolute
+    content: ''
+    width: 78px
+    height: 51px
+    background: url('../image/feedback/arrow-l.png')
+    top: 20%
+    right: 1%
+@media(max-width: 1200px)
+  .feedback
+    &-form
+      width: 80%
+      margin: auto
+      padding: 10px 0  10px 0
+      flex-direction: column
+    &::before
+      display: none
+    &::after
+      display: none
+@media(max-width: 567px)
+  .feedback
+    &-form
+      width: 80%
+

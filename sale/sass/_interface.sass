@@ -1,0 +1,62 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    outline: none
+body
+  font-family: sans-serif
+  
+img 
+  max-width: 100%
+.container
+  width: 1140px
+  margin: auto
+#toTop
+  width: 100px
+  border: none
+  text-align: center
+  padding: 5px
+  position: fixed
+  bottom: 10%
+  right: 5%
+  cursor: pointer
+  display: none
+  z-index: 99999
+a
+  text-decoration: none
+  color: #393939
+  cursor: pointer
+  outline: none
+button
+  cursor: pointer
+  outline: none
+#username-error
+  font-family: 'Open Sans Semibold', sans-serif
+  color: $bg-color
+  position: absolute
+  top: 280px
+  right: 50px
+#useremail-error
+  font-family: 'Open Sans Semibold', sans-serif
+  color: $bg-color
+  position: absolute
+  top: 125px
+  right: 50px
+  
+.tabs__content
+  display: none 
+.tabs__content.active
+  display: block
+
+
+@media (max-width: 1200px)
+  .owl-nav
+    position: absolute
+    display: flex
+    justify-content: space-between
+    width: 100%
+    top: 160px
+  .swiper-button-prev:after
+    display: none
+  .swiper-button-next:after
+    display: none

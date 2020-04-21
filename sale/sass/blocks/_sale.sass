@@ -1,0 +1,345 @@
+.sale
+  padding-top: 51px
+  padding-bottom: 35px
+  &-title
+    position: relative
+    margin-bottom: 40px
+    &__text
+      font-size: 26px
+      font-family: 'Open Sans Semibold', sans-serif
+      text-align: center
+      &::after
+        content: ''
+        position: absolute
+        width: 66px
+        height: 1px
+        background-color: $br-color
+        bottom: -15px
+        left: 50%
+        transform: translateX(-50%)
+      
+      
+  &-cards
+    display: flex
+    justify-content: space-between
+    position: relative
+    // flex-wrap: wrap
+    &-selects
+      display: none
+      &:last-child
+        margin-right: 0
+    &__button
+      width: 57px
+      height: 37px
+      position: relative
+      background: none
+      border: none
+      cursor: pointer
+      &::after
+        position: absolute
+        content: ''
+        background: url('../img/sale/bt-basket.png')
+        width: 57px
+        height: 37px
+        top: 0
+        right: 0
+        
+        
+        
+    &__select
+      cursor: pointer
+      width: 108px
+      padding: 15px
+      appearance: none
+      display: flex
+      border: 1px solid #95dbf1
+      font-size: 13px
+      opacity: 0.7
+    &-select
+      margin-right: 8px
+      position: relative
+      &::after
+        position: absolute
+        content: ''
+        background: url('../img/sale/arrow-down.png')
+        width: 11px
+        height: 6px
+        top: 50%
+        right: 8px
+      &_color
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          top: 50%
+          left: 12px
+          width: 25px
+          height: 25px
+          background-color: #024e88
+          border-radius: 50%
+          transform: translateY(-50%)
+          z-index: 1
+        
+
+          
+    &-favorite
+      display: none
+      justify-content: space-between
+      align-items: center
+      margin-top: 14px
+      font-size: 13px
+    &__link
+      text-decoration: none
+      // margin-left: 10px
+      // padding-left: 12px
+      margin-right: 22px
+      color: #393939
+      font-weight: 400
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        background: url('../img/sale/fav.png')
+        width: 17px
+        height: 16px
+        left: -20px
+        
+    &__oneclick
+      color: #00b5ee
+      display: flex
+      align-items: center
+      font-weight: 700
+      text-decoration: none
+    &-news
+      position: relative
+      width: 100%
+      &::before
+        content: ''
+        position: absolute
+        top: 60px
+        left: 10px
+        width: 50px
+        height: 50px
+        background: url(../img/sale/new.png) no-repeat center center
+    &-new
+      position: relative
+      width: 100%
+      &::before
+        content: ''
+        position: absolute
+        top: 10px
+        left: 14px
+        width: 50px
+        height: 50px
+        background: url(../img/sale/new.png) no-repeat center center
+    &-sale
+      position: relative
+      width: 100%
+      &::before
+            content: ''
+            position: absolute
+            top: 14px
+            left: 10px
+            width: 50px
+            height: 50px
+            background: url(../img/sale/stock.png) no-repeat center center
+        
+
+    
+
+    &__item 
+      display: flex
+      align-items: center
+      flex-direction: column
+      border: 1px solid $br-color
+      border-radius: 5px
+      width: 263px
+      height: 386px
+      position: relative
+      // margin-right: 20px
+      &::before
+        position: absolute
+        content: ''
+        bottom: -80px
+        border: 1px solid #e8e8e8
+        border-top: 0
+        left: -1px
+        width: 261px
+        height: 80px
+        background-color: #fff
+        z-index: 1
+        visibility: hidden
+        transition: box-shadow .2s
+      // &:hover
+      //   border-bottom: 0
+      //   box-shadow: 0 0 13px rgba(0,0,0,.12)
+      //   &::before
+      //     visibility: visible
+      //     box-shadow: 1px 4px 6px -1px rgba(0,0,0,.12), -1px 4px 6px -1px rgba(0,0,0,.12)
+      //   .sale
+      //     &-cards
+      //       &-price
+      //         margin-bottom: 0
+      //         z-index: 2
+      //       &-selects
+      //         display: flex
+      //         margin-bottom: 15px
+      //       &__select
+      //         width: 109px
+      //         padding: 12px
+      //         // margin-right: 7px
+      //         height: 40px
+      //         &_color
+      //           padding-left: 40px
+      //           margin-right: 0
+      //       &-favorite
+      //         display: flex
+      //         margin-bottom: 16px
+      //         margin-left: 26px
+      //         z-index: 2
+      //       &__number
+      //         margin-bottom: 15px
+        
+              
+        
+
+        
+          
+    &__description
+      display: block
+      text-align: center
+      margin-top: 25px
+      margin-bottom: 10px
+      color: $main-color
+      font-size: 16px
+      font-family: 'Open Sans Semibold', sans-serif
+    &__number
+      color: $art-color
+      font-size: 13px
+      font-family: 'Open Sans Semibold', sans-serif
+      margin-bottom: 20px
+    &-price
+      width: 100%
+      display: flex
+      justify-content: space-around
+      align-items: center
+      margin-bottom: 22px
+      color: $main-color
+      font-size: 18px
+      font-family: 'Roboto Regular', sans-serif
+      &_bold
+        font-family: 'Roboto Bold', sans-serif , sans-serif
+// .sales
+//   position: relative
+//   margin-bottom: 20px
+//   &::before
+//         content: ''
+//         position: absolute
+//         top: 5%
+//         left: 2%
+//         width: 50px
+//         height: 50px
+//         background: url(../img/sale/stock.png) no-repeat center center
+// .news
+//   position: relative
+//   &::after
+//     content: ''
+//     position: absolute
+//     top: 18%
+//     left: 2%
+//     width: 50px
+//     height: 50px
+//     background: url(../img/sale/new.png) no-repeat center center
+
+// .new-t
+//   position: relative
+//   &::before
+//     content: ''
+//     position: absolute
+//     top: 5%
+//     left: 2%
+//     width: 50px
+//     height: 50px
+//     background: url(../img/sale/new.png) no-repeat center center
+@media (min-width: 993px)
+  .sale
+    &-cards
+      &__item 
+          display: flex
+          align-items: center
+          flex-direction: column
+          border: 1px solid $br-color
+          border-radius: 5px
+          width: 263px
+          height: 386px
+          position: relative
+          // margin-right: 20px
+          &::before
+            position: absolute
+            content: ''
+            bottom: -80px
+            border: 1px solid #e8e8e8
+            border-top: 0
+            left: -1px
+            width: 261px
+            height: 80px
+            background-color: #fff
+            z-index: 1
+            visibility: hidden
+            transition: box-shadow .2s
+          &:hover
+            border-bottom: 0
+            box-shadow: 0 0 13px rgba(0,0,0,.12)
+            &::before
+              visibility: visible
+              box-shadow: 1px 4px 6px -1px rgba(0,0,0,.12), -1px 4px 6px -1px rgba(0,0,0,.12)
+            .sale
+              &-cards
+                &-price
+                  margin-bottom: 0
+                  z-index: 2
+                &-selects
+                  display: flex
+                  margin-bottom: 15px
+                &__select
+                  width: 109px
+                  padding: 12px
+                  // margin-right: 7px
+                  height: 40px
+                  &_color
+                    padding-left: 40px
+                    margin-right: 0
+                &-favorite
+                  display: flex
+                  margin-bottom: 16px
+                  margin-left: 26px
+                  z-index: 2
+                &__number
+                  margin-bottom: 15px
+@media (max-width: 1200px)
+  .sale
+    &-cards
+      width: 630px
+      margin: auto
+      &__item
+        margin-right: auto
+        margin-left: auto
+  .new
+    &-cards
+      width: 630px
+      margin: auto
+      &__item
+        margin-right: auto
+        margin-left: auto
+
+@media (max-width: 768px)
+  .sale
+    padding-top: 33px
+    &-title
+      &__text
+        font-size: 23px
+    &-cards
+      width: auto
+  .new
+    &-cards
+      width: auto

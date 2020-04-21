@@ -1,0 +1,88 @@
+.banner
+  display: block
+  width: 100%
+  top: 80px
+  min-height: 248px
+  background-color: #f7f9ef
+  box-shadow: 0 0 10px rgba(16, 17, 17, 0.4)
+  position: relative
+  &-snowman
+    position: absolute
+    width: 209px
+    height: 176px
+    background: url(../image/banner/banner-snowman.png)
+    bottom: 0
+    right: 15%
+  &-sale
+    position: absolute
+    width: 184px
+    height: 93px
+    background: url(../image/banner/banner-sale.png)
+    top: 0
+    left: 20%
+  &-arrow
+    position: absolute
+    width: 111px
+    height: 231px
+    background: url(../image/banner/banner-arrow.png)
+    bottom: -50%
+    right: 3%
+    z-index: 999
+    &::after
+      position: absolute
+      content: 'Лови момент!'
+      font-size: 25px
+      font-family: 'Arctika script Regular'
+      color: #ffffff
+      left: -25px
+      bottom: 35%
+      width: 146px
+      height: 16px
+      transform: rotate(-90deg)
+  &::before
+    position: absolute
+    content: ''
+    width: 483px
+    height: 248px
+    background: url('../image/banner/banner-before.png')
+    top: 0
+    left: 0
+  &::after
+    position: absolute
+    content: ''
+    width: 493px
+    height: 248px
+    background: url('../image/banner/banner-after.png')
+    top: 0
+    right: 0
+  &__title
+    padding-top: 30px
+    font-family: 'Arctika script Regular'
+    border: 5px solid #f8f8f8    
+    text-shadow: 0 4px 8px rgba(16, 17, 17, 0.75)
+    color: #de2c2f
+    font-size: 117px
+    text-align: center
+    font-weight: 400
+    line-height: 66.67px
+    -webkit-text-stroke-width: 2px
+    -webkit-text-stroke-color: #f8f8f8
+.big
+  font-size: 108px
+@media(max-width: 1200px)
+  .banner
+    &::before
+      display: none
+    &-sale
+      display: none
+    &-snowman
+      display: none
+@media(max-width: 992px)
+  .banner
+    display: none
+@media(max-width: 768px)
+ .banner
+  display: none
+  
+
+  

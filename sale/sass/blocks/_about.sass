@@ -1,0 +1,72 @@
+.about
+  margin-bottom: 43px
+  &__title
+    font-size: 26px
+    font-family: 'Open Sans Semibold', sans-serif
+    color: $main-color
+    margin-bottom: 34px
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      width: 66px
+      height: 1px
+      bottom: -14px
+      left: 0
+      background-color: $br-color
+      
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-card
+    &__img
+      margin-top: 10px
+    &__item
+      display: flex
+      align-items: center
+      flex-direction: column
+      width: 208px
+      height: 306px
+      border: 1px solid $br-color
+      margin-bottom: 20px
+      &:hover
+        border-bottom: 0
+        cursor: pointer
+        outline: none
+        box-shadow: 0 0 13px rgba(0,0,0,.12)
+    &__description
+      max-width: 165px
+      margin-top: 13px
+      margin-bottom: 15px
+      font-size: 15px
+      font-family: 'Open Sans Bold', sans-serif
+      text-align: center
+        
+    &__price
+      font-size: 18px
+      font-family: 'Roboto Bold', sans-serif
+      text-align: center
+@media (max-width: 1200px)
+  .about
+    &-cards
+      // width: 496px
+      width: 800px
+      margin: auto
+    &-card
+      &__item
+        margin-right: auto
+        margin-left: auto 
+@media (max-width: 768px)
+  .about
+    &-cards
+      width: auto
+
+@media (max-width: 567px)
+  .about
+    &__title
+      font-size: 20px
+    &-cards
+      justify-content: center
+
+  

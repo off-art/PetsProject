@@ -1,0 +1,77 @@
+.sort
+  margin-bottom: 10px
+  &-box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.select
+  outline: none
+  border: 1px solid #95dbf1
+  width: 263px
+  height: 51px
+  padding: 15px
+  margin-bottom: 20px
+  font-family: "Open Sans Regular", sans-serif
+  opacity: 0.7
+  font-size: 14px
+  color: #242021
+  appearance: none
+  position: relative
+  &__color
+    cursor: pointer
+  &__old
+    cursor: pointer 
+  &__brand
+    cursor: pointer
+  &__sort
+    cursor: pointer
+
+.sort
+  &-select
+    
+    &__after
+      position: relative
+      
+      &::after
+        position: absolute
+        content: ''
+        width: 11px
+        height: 6px
+        background: url('../img/sort/arrow-down.png')
+        top: 25px
+        right: 14px
+
+@media (max-width: 1200px)
+  .links
+    &-box
+      &_list
+        display: none
+  .sort
+    &-box
+      width: 596px
+      margin: auto
+      margin-top: 35px
+      margin-top: 30px
+      width: 99%
+  .select
+    width: 288px
+    height: 47px
+    margin-bottom: 12px
+    padding: 15px
+    font-size: 12px
+@media (max-width: 650px)
+  .sort
+    &-box
+      justify-content: center 
+@media (max-width: 567px)
+  .sort
+    margin-bottom: 18px
+    &-box
+  .select
+    width: 289px
+    height: 46px
+    margin-bottom: 5px
+
+    
+
+      
